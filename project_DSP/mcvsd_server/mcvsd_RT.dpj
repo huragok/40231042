@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<visualdsp-project schema="16" name="mcvsd_RT" file="mcvsd_RT.dpj" version="1">
+	<!-- Project build target -->
+	<target>
+		<processor revision="Automatic">ADSP-BF561</processor>
+		<extension>.dxe</extension>
+		<type>Executable file</type>
+	</target>
+	<!-- Configurations -->
+	<configurations active="Debug">
+		<configuration name="Debug">
+			<intermediate-dir>.\Debug</intermediate-dir>
+			<output-dir>.\Debug</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+		<configuration name="Release">
+			<intermediate-dir>.\Release</intermediate-dir>
+			<output-dir>.\Release</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+	</configurations>
+	<!-- Project folders -->
+	<folders>
+		<folder name="Header Files" ext=".h,.hpp,.hxx">
+			<files>
+				<file name=".\bf5xx.h">
+				</file>
+				<file name=".\coder.h">
+				</file>
+				<file name=".\dm9000.h">
+				</file>
+				<file name=".\EthFunc.h">
+				</file>
+				<file name=".\EthPacket.h">
+				</file>
+				<file name=".\fir_coeff.h">
+				</file>
+				<file name=".\header.h">
+				</file>
+				<file name=".\mds_def.h">
+				</file>
+				<file name=".\system.h">
+				</file>
+				<file name=".\Talkthrough.h">
+				</file>
+				<file name=".\types.h">
+				</file>
+			</files>
+		</folder>
+		<folder name="Linker Files" ext=".ldf,.dlb">
+		</folder>
+		<folder name="Source Files" ext=".c,.cpp,.cxx,.asm,.dsp,.s">
+			<files>
+				<file name=".\code_mcvsd.asm">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\decode_mcvsd.asm">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\dm9000.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\EthFunc.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\Initialize.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\ISR.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\main.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\Process_data.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\set_PLL.c">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+			</files>
+		</folder>
+	</folders>
+</visualdsp-project>
